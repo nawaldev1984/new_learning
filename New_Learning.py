@@ -13,3 +13,13 @@
 
 
 # len_cities(cities)
+
+heros = ["Superman", "Batman", "Wonder Woman", "Flash", "Aquaman"]
+
+
+def print_list(list):
+    for hero in list:
+        print(hero, end=", ")
+
+
+print_list(heros)
