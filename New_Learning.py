@@ -1,8 +1,15 @@
-print("Hello, welcome to the New Learning module!")
+# def greet_user(name):
+#     return f"Hello, {name}! Let's start learning together."
 
 
-def greet_user(name):
-    print(f"Hello, {name}! Let's start learning together.")
+# welcome = greet_user("Student")
+# print(welcome)
+
+cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"]
 
 
-greet = greet_user("Student")
+def len_cities(list):
+    print(len(list))
+
+
+len_cities(cities)
