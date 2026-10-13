@@ -6,6 +6,8 @@
 # print(welcome)
 
 cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"]
+heroes = ["Superman", "Batman", "Wonder Woman",
+          "Spider-Man", "Iron Man", "Captain America"]
 
 
 def len_cities(list):
@@ -13,3 +15,4 @@ def len_cities(list):
 
 
 len_cities(cities)
+len_cities(heroes)
