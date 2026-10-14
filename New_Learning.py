@@ -14,12 +14,22 @@
 
 # len_cities(cities)
 
-heros = ["Superman", "Batman", "Wonder Woman", "Flash", "Aquaman"]
+# heros = ["Superman", "Batman", "Wonder Woman", "Flash", "Aquaman"]
 
 
-def print_list(list):
-    for hero in list:
-        print(hero, end=", ")
+# def print_list(list):
+#     for hero in list:
+#         print(hero, end=", ")
 
 
-print_list(heros)
+# print_list(heros)
+
+
+# def cal_fact(n):
+#     fact = 1
+#     for i in range(1, n + 1):
+#         fact *= i
+#     print(fact)
+
+
+# facto = cal_fact(5)
