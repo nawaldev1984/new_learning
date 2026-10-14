@@ -33,3 +33,32 @@
 
 
 # facto = cal_fact(5)
+
+# recursive functions
+# def show(n):
+#     if n == 0:
+#         return
+#     show(n - 1)
+#     print(n)
+
+
+# show(5)
+
+
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
+
+
+# print(factorial(5))
+
+# def calc_sum(n):
+#     if n == 0:
+#         return 0
+#     else:
+#         return n + calc_sum(n - 1)
+
+
+# print(calc_sum(5))
