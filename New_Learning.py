@@ -38,7 +38,7 @@ choices = ["R", "P", "S"]
 def get_user_choice():
     while True:
         user_choice = input(
-            "Please choose rock, paper, scissors(r/s/p):").lower()
+            "Please choose rock, paper, scissors(r/s/p):").upper()
         if user_choice in choices:
             return user_choice
         else:
