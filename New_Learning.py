@@ -38,7 +38,7 @@ choices = ["R", "P", "S"]
 def get_user_choice():
     while True:
         user_choice = input(
-            "Please choose rock, paper, scissors(r/s/p):").upper()
+            "Please choose rock, paper, scissors(r/s/p):").lower()
         if user_choice in choices:
             return user_choice
         else:
@@ -66,14 +66,14 @@ def determine_winner(user_choice, computer_choice):
 
 def play_game():
     while True:
-        user_choice = get_user_choice(choices)
+        user_choice = get_user_choice()
 
-        computer_choice = random.choice(choices).upper()
+        computer_choice = random.choice(choices)
 
         desplay_choices(user_choice, computer_choice)
         determine_winner(user_choice, computer_choice)
 
-        should_continue = input("Continue? (y/n)").upper()
+        should_continue = input("Continue? (y/n)").lower()
         if should_continue == "n":
             break
 
