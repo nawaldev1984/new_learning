@@ -83,3 +83,8 @@
 
 
 # play_game()
+
+
+# QR Code builder
+# ====================
+
