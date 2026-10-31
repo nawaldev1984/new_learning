@@ -29,53 +29,57 @@
 #     except ValueError:
 #         print("Incorrect number, Plese try again the correct number!!.")
 
-import random
+# import random
 
-emojis = {"R": "🪨", "P": "📄", "S": "✂️"}
-choices = ["R", "P", "S"]
+# ROCK = "R"
+# SCISSORS = "S"
+# PAPER = "P"
 
-
-def get_user_choice():
-    while True:
-        user_choice = input(
-            "Please choose rock, paper, scissors(r/s/p):").upper()
-        if user_choice in choices:
-            return user_choice
-        else:
-            print("!!!!!! Invalid choice !!!!")
+# emojis = {ROCK: "🪨", PAPER: "📄", SCISSORS: "✂️"}
+# choices = tuple(emojis.keys())
 
 
-def desplay_choices(user_choice, computer_choice):
-
-    print(f"You chose: {emojis[user_choice]}")
-    print(f"You chose: {emojis[computer_choice]}")
-
-
-def determine_winner(user_choice, computer_choice):
-    if user_choice == computer_choice:
-        print("Its Tie!")
-    elif (
-
-        (user_choice == "r" and computer_choice == "s") or
-        (user_choice == "s" and computer_choice == "p") or
-            (user_choice == "p" and computer_choice == "r")):
-        print("You Win!! ")
-    else:
-        print("You Lost")
+# def get_user_choice():
+#     while True:
+#         user_choice = input(
+#             "Please choose rock, paper, scissors(r/s/p):").upper()
+#         if user_choice in choices:
+#             return user_choice
+#         else:
+#             print("!!!!!! Invalid choice !!!!")
 
 
-def play_game():
-    while True:
-        user_choice = get_user_choice()
+# def desplay_choices(user_choice, computer_choice):
 
-        computer_choice = random.choice(choices)
-
-        desplay_choices(user_choice, computer_choice)
-        determine_winner(user_choice, computer_choice)
-
-        should_continue = input("Continue? (y/n)").lower()
-        if should_continue == "n":
-            break
+#     print(f"You chose: {emojis[user_choice]}")
+#     print(f"Computer chose: {emojis[computer_choice]}")
 
 
-play_game()
+# def determine_winner(user_choice, computer_choice):
+#     if user_choice == computer_choice:
+#         print("Its Tie!")
+#     elif (
+
+#         (user_choice == ROCK and computer_choice == SCISSORS) or
+#         (user_choice == SCISSORS and computer_choice == PAPER) or
+#             (user_choice == PAPER and computer_choice == ROCK)):
+#         print("You Win!! ")
+#     else:
+#         print("You Lost")
+
+
+# def play_game():
+#     while True:
+#         user_choice = get_user_choice()
+
+#         computer_choice = random.choice(choices)
+
+#         desplay_choices(user_choice, computer_choice)
+#         determine_winner(user_choice, computer_choice)
+
+#         should_continue = input("Continue? (y/n)").lower()
+#         if should_continue == "n":
+#             break
+
+
+# play_game()
